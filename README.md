@@ -1,6 +1,4 @@
-![](https://i.imgur.com/dqcwisH.png)
-
-# Freshpoint
+![](docs\images\freshpoint-logo.png)
 
 Freshpoint is a minimalist Sass boilerplate, with cross browser support and consistent styling for forms, tables, lists, and typography.
 
@@ -14,6 +12,9 @@ Freshpoint is a minimalist Sass boilerplate, with cross browser support and cons
 # Todo
 
 - [ ] Add Compilation Steps
+- [ ] Add Full Docs
+- [ ] Add Component Styles
+- [ ] Add github pages support endpoint
 
 # Liscense
 
