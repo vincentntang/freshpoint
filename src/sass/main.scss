@@ -1,0 +1,13 @@
+/* Freshpoint CSS
+ * Minimalist Sass Boilerplate
+ *
+ * Author: Vincent Tang
+ */
+
+ // Configuration
+ @import "base/variables";
+ @import "base/mixins";
+
+ // Resets
+ @import "base/normalize";
+ @import "base/reset";

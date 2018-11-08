@@ -1,0 +1,16 @@
+/* Media Query Mixins
+==================*/
+
+// Mobile First
+@mixin screen-min($min) { 
+  @media (min-width: $min) { 
+    @content 
+  } 
+};
+
+// Desktop First
+@mixin screen-max($max) { 
+  @media (max-width: $max - 1) { 
+    @content 
+  } 
+};

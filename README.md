@@ -1,2 +1,22 @@
-# freshpoint
-A customizable minimal sass boilerplate
+![](https://i.imgur.com/dqcwisH.png)
+
+# Freshpoint
+
+Freshpoint is a minimalist Sass boilerplate, with cross browser support and consistent styling for forms, tables, lists, and typography.
+
+# Getting Started
+
+- Quick Start
+- Sass Integration
+
+# Documentation
+
+# Todo
+
+- [ ] Add Compilation Steps
+
+# Liscense
+
+The code is open source and available under the [MIT Liscense](https://opensource.org/licenses/MIT)
+
+Built and maintained by [Vincent Tang](https://vincentmtang.com)
