@@ -9,6 +9,14 @@ Freshpoint is a minimalist Sass boilerplate, with cross browser support and cons
 
 # Documentation
 
+Download Node.js
+
+Run these commands
+```
+npm install --global gulp-cli
+npm install --save-dev gulp
+```
+
 # Todo
 
 - [ ] Add Compilation Steps
