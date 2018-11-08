@@ -8,16 +8,27 @@ gulp.watch - watch file folders
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
+
+gulp.task('browser-sync', function(){
+  browserSync.init({
+    server:{
+      baseDir: "./dist"
+    },
+    // proxy:'http://localhost/devwp'
+  })
+})
 
 // Sass → Css
 gulp.task('sass',function(){
   gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.stream());
 });
-gulp.task('sass:watch', function(){
+// Watch changes
+gulp.task('watch', ['browser-sync', 'sass'], function(){
   gulp.watch('src/sass/**/*.scss', ['sass']);
 })
-gulp.task('default', function(){
-  // some code will go here.
-});
+gulp.task('default', ['browser-sync', 'sass','watch']);
