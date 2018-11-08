@@ -1,4 +1,4 @@
-![](docs\images\freshpoint-logo.png)
+![](./docs/images/freshpoint-logo.png)
 
 Freshpoint is a minimalist Sass boilerplate, with cross browser support and consistent styling for forms, tables, lists, and typography.
 
