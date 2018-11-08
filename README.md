@@ -14,7 +14,7 @@ Download Node.js
 Run these commands
 ```
 npm install --global gulp-cli
-npm install --save-dev gulp
+npm install --save-dev gulp gulp-sass browser-sync
 ```
 
 # Todo
