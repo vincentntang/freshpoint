@@ -11,16 +11,16 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
+// Initialize settings browsersync
 gulp.task('browser-sync', function(){
   browserSync.init({
     server:{
       baseDir: "./dist"
     },
-    // proxy:'http://localhost/devwp'
   })
 })
 
-// Sass → Css
+// Sass → Css pipeline
 gulp.task('sass',function(){
   gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -31,4 +31,5 @@ gulp.task('sass',function(){
 gulp.task('watch', ['browser-sync', 'sass'], function(){
   gulp.watch('src/sass/**/*.scss', ['sass']);
 })
+// Sync changes to browser
 gulp.task('default', ['browser-sync', 'sass','watch']);
