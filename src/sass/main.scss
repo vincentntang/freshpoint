@@ -1,13 +1,26 @@
-/* Freshpoint CSS
- * Minimalist Sass Boilerplate
- *
- * Author: Vincent Tang
- */
+//==============================================================================
+// Configuration
+//==============================================================================
 
- // Configuration
- @import "base/variables";
- @import "base/mixins";
+@import 'base/variables';
+@import 'base/media-queries';
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utility-multi';
+@import 'base/utility-single';
+@import 'base/vendor-overrides';
 
- // Resets
- @import "base/normalize";
- @import "base/reset";
+//==============================================================================
+// Pages
+//==============================================================================
+
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/register';
+
+//==============================================================================
+// Reusable Components
+//==============================================================================
+
+@import 'reusable/profile-menu';

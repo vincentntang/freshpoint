@@ -1,0 +1,113 @@
+/**********************************************/
+/* MIXINs */
+/**********************************************/
+
+// Customizeable utility functions
+@mixin custom-min($min) {
+  @media (min-width: $min) {
+    @content
+  }
+};
+@mixin custom-max($max) {
+  @media (max-width: $max - 1) {
+    @content
+  }
+};
+@mixin custom-minmax($min, $max){
+  @media (min-width: $min) and (max-width: $max - 1){
+    @content
+  }  
+};
+
+/* Maximum Media Queries */
+@mixin sm-max {
+  @media (max-width: #{$sm-max}){
+    @content
+  }
+};
+
+@mixin md-max {
+  @media (max-width: #{$md-max}){
+    @content
+  }
+};
+
+@mixin lg-max {
+  @media (max-width: #{$lg-max}-){
+    @content
+  }
+};
+
+@mixin xl-max {
+  @media (max-width: #{$xl-max}){
+    @content
+  }
+};
+
+@mixin xxl-max {
+  @media (max-width: #{$xxl-max}){
+    @content
+  }
+};
+
+
+/* Minimum media queries */
+@mixin sm-min {
+  @media (min-width: #{$sm-min}) {
+    @content
+  }
+};
+
+@mixin md-min {
+  @media (min-width: #{$md-min}) {
+    @content
+  }
+};
+
+@mixin lg-min {
+  @media (min-width: #{$lg-min}) {
+    @content
+  }
+};
+@mixin xl-min {
+  @media(min-width: #{$xl-min}){
+    @content
+  }
+};
+@mixin xxl-min {
+  @media(min-width: #{$xxl-min}){
+    @content
+  }
+};
+
+
+/**********************************************/
+/* EXAMPLE CODE */
+/**********************************************/
+
+.my-custom-class {
+  @include sm-max {
+    background-color: red; // only apply below 576px;
+  }
+  @include xl-min {
+    background-color: pink; // apply above 1200px;
+  }
+}
+
+.my-custom-class2 {
+  @include custom-min(900px){
+    border: 1px solid red; // apply if the screen width is greater than 900px;
+  }
+}
+
+.my-custom-class3 {
+  @include custom-minmax(600px, 700px){
+    border: 1px solid blue; // between 600 and 700px apply this border color
+  }
+}
+
+.my-custom-class4 {
+  @include custom-max(500px){
+    border: 3px dotted black; // below 500px apply border
+  }
+}

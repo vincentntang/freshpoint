@@ -1,6 +1,35 @@
-/* Variables
- * ====================
- *
- * Customize your file on this page*/
+/**********************************************/
+/* COLOR DECLARATIONS */
+/**********************************************/
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+$lightgray: rgb(196,196,196);
+$blurple: rgb(118,100,252);
+$cool-teal: rgb(56, 244, 241);
+$radical-pink: rgb(252, 0, 60);
 
-// Containers
+
+/**********************************************/
+/* Typography Variables */
+/**********************************************/
+$global-font1: 'Roboto', sans-serif;
+
+/**********************************************/
+/* Typography Variables */
+/**********************************************/
+$spacer: 2px;
+
+/**********************************************/
+/* BREAKPOINTS (based on bootstrap) */
+/* 576,768,992,1200,1600*/
+/**********************************************/
+$sm-max: 575px;
+$sm-min: 576px;
+$md-max: 767px;
+$md-min: 768px;
+$lg-max: 991px;
+$lg-min: 992px;
+$xl-max: 1199px;
+$xl-min: 1200px;
+$xxl-max: 1599px;
+$xxl-min: 1600px; // not part of bootstrap but added anyways

@@ -1,0 +1,152 @@
+/**
+ * These are all styles used for CSS Box-Model.
+ * Margin & Padding
+ * Uses the $spacer defined in variables, defaulted to 2px
+ * This generates a bunch of helper classes for things like removing margins on a <p> element
+ * If your class uses more CSS properties besides these, put the padding and margin in that class instead
+ * 
+ * Examples:
+ * mt-0 means margin-top of 0px
+ * mx-2 means margin-left of 4px, margin-rigiht 4px
+ * pb-0 means padding-bottom 0px
+ */
+
+@for $i from 0 through 50 {
+  .m-#{$i} {
+    margin: $i * $spacer !important;
+  }
+  .ml-#{$i} {
+    margin-left: $i * $spacer !important;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $spacer !important;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $spacer !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $spacer !important;
+  }
+  .mx-#{$i} {
+    margin-left: $i * $spacer !important;
+    margin-right: $i * $spacer !important;
+  }
+  .my-#{$i} {
+    margin-top: $i * $spacer !important;
+    margin-bottom: $i * $spacer !important;
+  }
+  .p-#{$i} {
+    padding: $i * $spacer !important;
+  }
+  .pl-#{$i} {
+    padding-left: $i * $spacer !important;
+  }
+  .pr-#{$i} {
+    padding-right: $i * $spacer !important;
+  }
+  .pt-#{$i} {
+    padding-top: $i * $spacer !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * $spacer !important;
+  }
+  .px-#{$i} {
+    padding-left: $i * $spacer !important;
+    padding-right: $i * $spacer !important;
+  }
+  .py-#{$i} {
+    padding-top: $i * $spacer !important;
+    padding-bottom: $i * $spacer !important;
+  }
+}
+
+
+/**
+ * Responsive Text Size Changes
+ * Useful for quickly tweaking font sizes on different mobile devices on <p> elements or similar
+ *
+ * Examples:
+ * text-14 -> apply font-size 14 everywhere
+ * text-sm-14 -> apply font size 14 only above 576px
+ * texet-xl-50 -> apply font size to above 1200px
+ */
+@for $i from 8 through 50 {
+  .text-#{$i} {
+    font-size: #{$i}px !important;
+  }
+  .text-sm-#{$i} {
+    @include sm-min {
+      font-size: #{$i}px !important;
+    }
+  }
+  .text-md-#{$i}  {
+    @include md-min {
+      font-size: #{$i}px !important;
+    }
+  }
+  .text-lg-#{$i} {
+    @include lg-min {
+      font-size: #{$i}px !important;
+    }
+  }
+  .text-xl-#{$i} {
+    @include xl-min {
+      font-size: #{$i}px !important;
+    }    
+  }
+  .text-xxl-#{$i}  {
+    @include xxl-min {
+      font-size: #{$i}px !important;
+   } 
+  }
+}
+
+/**
+ * Custom typography iteration
+ * Examples:
+ *
+ * font-weight-bold -> applies font-weight bold everywhere
+ * font-weight-sm-bold -> applies font-weight bold above 576px
+ * font-weight xl-semibold -> applies font-weight 500px above 1200px screen size
+ *
+ * Based on :https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+ * and https://fonts.google.com/specimen/Roboto
+ */
+
+ $font-weights: (
+  "light" 300,
+  "normal" 400,
+  "semibold" 500,
+  "bold" 700,
+  
+);
+@each $name, $font-weight in $font-weights {
+  .font-weight-#{$name} {
+    font-weight: $font-weight !important;
+  }
+  .font-weight-sm-#{$name} {
+    @include sm-min {
+      font-weight: $font-weight !important;
+    }
+  }
+  .font-weight-md-#{$name}  {
+    @include md-min {
+      font-weight: $font-weight !important;
+    }
+  }
+  .font-weight-lg-#{$name} {
+    @include lg-min {
+      font-weight: $font-weight !important;
+    }
+  }
+  .font-weight-xl-#{$name} {
+    @include xl-min {
+      font-weight: $font-weight !important;
+    }    
+  }
+  .font-weight-xxl-#{$name}  {
+    @include xxl-min {
+      font-weight: $font-weight !important;
+    } 
+  }
+}

@@ -1,0 +1,52 @@
+/**
+ * Only put classes that are one liners here
+ */ 
+
+// Text Alignment
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+// Positioning
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+
+// Cursors
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+// Flexbox
+.d-flex {
+  display: flex
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-column {
+  flex: column;
+}
+
+// Display
+.d-inline {
+  display :inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
