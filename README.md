@@ -8,7 +8,7 @@ Freshpoint is a minimalist sass framework designed to be used with other UI libr
 
 Freshpoint takes an opinionated approach on how to organize those custom styles. It includes utilities that are most commonly used for making any responsive fullpage applications and nothing more.
 
-Works alongside with frameworks like React, Vue, Angular, etc. Examples in the docs
+Works alongside with frameworks like React, Vue, Angular, etc. Just copy the `src/sass` directory into your project
 
 Core Features:
 
