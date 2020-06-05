@@ -178,9 +178,9 @@ Folder Struct:
 - Pages are specific to routes, generally kept to a minimum
 - Reusable is any specific component styling
 
-# Customizing New Files
+# Adding New Files
 
-`Main.scss` is the main import for all other files. You can add additional files and add the references here:
+`Main.scss` is the main import for all other files. You can add additional reference files here
 
 ```scss
 //==============================================================================
