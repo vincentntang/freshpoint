@@ -15,10 +15,8 @@ Core Features:
 - Variables for declaring common breakpoints
 - Helper mixins for scoping media queries to classes
 - Opinionated 3 folder structure for organizing scss
-- Utility functions for quick padding/margin adjustments
-- Utility functions for responsive text sizing
-
-Rather, it contains of useful helper functions for media queries,
+- Utility functions for responsive padding/margin classes
+- Utility functions for responsive text sizing classes
 
 # Getting Started
 
