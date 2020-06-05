@@ -113,7 +113,6 @@ Utility Padding / Margin Functions
 - `mx-` - margin left/right
 - `my-` - margin top / bottom
 - `m-` - margin all 4 sides
-```
 
 Examples of using utility classes. The number denoted at the end is multipled by 2 to get the amount of margins it changes
 
