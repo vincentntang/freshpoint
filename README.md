@@ -210,8 +210,8 @@ Folder Struct:
 @import 'reusable/profile-menu';
 ```
 
-# Liscense
+# License
 
-The code is open source and available under the [MIT Liscense](https://opensource.org/licenses/MIT)
+The code is open source and available under the [MIT License](https://opensource.org/licenses/MIT)
 
 Built and maintained by [Vincent Tang](https://vincentntang.com)
