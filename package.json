@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/vincentntang/freshpoint#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.29.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
   }
